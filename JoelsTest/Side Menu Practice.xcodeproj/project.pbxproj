@@ -50,17 +50,17 @@
 
 /* Begin PBXFileReference section */
 		E9680FEF22E45F7E0074F7F4 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
-		E99B884022E3E4EF00C25CA3 /* JoelsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoelsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99B884022E3E4EF00C25CA3 /* Side Menu Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Side Menu Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99B884322E3E4EF00C25CA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E99B884522E3E4EF00C25CA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E99B884822E3E4EF00C25CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E99B884A22E3E4F000C25CA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E99B884D22E3E4F000C25CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E99B884F22E3E4F000C25CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E99B885422E3E4F000C25CA3 /* JoelsTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoelsTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99B885422E3E4F000C25CA3 /* Side Menu PracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Side Menu PracticeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99B885822E3E4F000C25CA3 /* JoelsTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoelsTestTests.swift; sourceTree = "<group>"; };
 		E99B885A22E3E4F000C25CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E99B885F22E3E4F000C25CA3 /* JoelsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoelsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99B885F22E3E4F000C25CA3 /* Side Menu PracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Side Menu PracticeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E99B886322E3E4F000C25CA3 /* JoelsTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoelsTestUITests.swift; sourceTree = "<group>"; };
 		E99B886522E3E4F000C25CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E99B887622E3EB0F00C25CA3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -107,9 +107,9 @@
 		E99B883722E3E4EF00C25CA3 = {
 			isa = PBXGroup;
 			children = (
-				E99B884222E3E4EF00C25CA3 /* JoelsTest */,
-				E99B885722E3E4F000C25CA3 /* JoelsTestTests */,
-				E99B886222E3E4F000C25CA3 /* JoelsTestUITests */,
+				E99B884222E3E4EF00C25CA3 /* Side Menu Practice */,
+				E99B885722E3E4F000C25CA3 /* SideMenuTests */,
+				E99B886222E3E4F000C25CA3 /* SideMenuUITests */,
 				E99B884122E3E4EF00C25CA3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,14 +117,14 @@
 		E99B884122E3E4EF00C25CA3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E99B884022E3E4EF00C25CA3 /* JoelsTest.app */,
-				E99B885422E3E4F000C25CA3 /* JoelsTestTests.xctest */,
-				E99B885F22E3E4F000C25CA3 /* JoelsTestUITests.xctest */,
+				E99B884022E3E4EF00C25CA3 /* Side Menu Practice.app */,
+				E99B885422E3E4F000C25CA3 /* Side Menu PracticeTests.xctest */,
+				E99B885F22E3E4F000C25CA3 /* Side Menu PracticeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E99B884222E3E4EF00C25CA3 /* JoelsTest */ = {
+		E99B884222E3E4EF00C25CA3 /* Side Menu Practice */ = {
 			isa = PBXGroup;
 			children = (
 				E99B887A22E3F56700C25CA3 /* utils */,
@@ -139,25 +139,25 @@
 				E99B884C22E3E4F000C25CA3 /* LaunchScreen.storyboard */,
 				E99B884F22E3E4F000C25CA3 /* Info.plist */,
 			);
-			path = JoelsTest;
+			path = "Side Menu Practice";
 			sourceTree = "<group>";
 		};
-		E99B885722E3E4F000C25CA3 /* JoelsTestTests */ = {
+		E99B885722E3E4F000C25CA3 /* SideMenuTests */ = {
 			isa = PBXGroup;
 			children = (
 				E99B885822E3E4F000C25CA3 /* JoelsTestTests.swift */,
 				E99B885A22E3E4F000C25CA3 /* Info.plist */,
 			);
-			path = JoelsTestTests;
+			path = SideMenuTests;
 			sourceTree = "<group>";
 		};
-		E99B886222E3E4F000C25CA3 /* JoelsTestUITests */ = {
+		E99B886222E3E4F000C25CA3 /* SideMenuUITests */ = {
 			isa = PBXGroup;
 			children = (
 				E99B886322E3E4F000C25CA3 /* JoelsTestUITests.swift */,
 				E99B886522E3E4F000C25CA3 /* Info.plist */,
 			);
-			path = JoelsTestUITests;
+			path = SideMenuUITests;
 			sourceTree = "<group>";
 		};
 		E99B887122E3E59800C25CA3 /* Services */ = {
@@ -219,9 +219,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E99B883F22E3E4EF00C25CA3 /* JoelsTest */ = {
+		E99B883F22E3E4EF00C25CA3 /* Side Menu Practice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E99B886822E3E4F000C25CA3 /* Build configuration list for PBXNativeTarget "JoelsTest" */;
+			buildConfigurationList = E99B886822E3E4F000C25CA3 /* Build configuration list for PBXNativeTarget "Side Menu Practice" */;
 			buildPhases = (
 				E99B883C22E3E4EF00C25CA3 /* Sources */,
 				E99B883D22E3E4EF00C25CA3 /* Frameworks */,
@@ -231,18 +231,18 @@
 			);
 			dependencies = (
 			);
-			name = JoelsTest;
+			name = "Side Menu Practice";
 			packageProductDependencies = (
 				5DB3B72B26B1DB1400E34171 /* Alamofire */,
 				5DB3B72E26B1E26B00E34171 /* Anchorage */,
 			);
 			productName = JoelsTest;
-			productReference = E99B884022E3E4EF00C25CA3 /* JoelsTest.app */;
+			productReference = E99B884022E3E4EF00C25CA3 /* Side Menu Practice.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E99B885322E3E4F000C25CA3 /* JoelsTestTests */ = {
+		E99B885322E3E4F000C25CA3 /* Side Menu PracticeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E99B886B22E3E4F000C25CA3 /* Build configuration list for PBXNativeTarget "JoelsTestTests" */;
+			buildConfigurationList = E99B886B22E3E4F000C25CA3 /* Build configuration list for PBXNativeTarget "Side Menu PracticeTests" */;
 			buildPhases = (
 				E99B885022E3E4F000C25CA3 /* Sources */,
 				E99B885122E3E4F000C25CA3 /* Frameworks */,
@@ -253,14 +253,14 @@
 			dependencies = (
 				E99B885622E3E4F000C25CA3 /* PBXTargetDependency */,
 			);
-			name = JoelsTestTests;
+			name = "Side Menu PracticeTests";
 			productName = JoelsTestTests;
-			productReference = E99B885422E3E4F000C25CA3 /* JoelsTestTests.xctest */;
+			productReference = E99B885422E3E4F000C25CA3 /* Side Menu PracticeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E99B885E22E3E4F000C25CA3 /* JoelsTestUITests */ = {
+		E99B885E22E3E4F000C25CA3 /* Side Menu PracticeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E99B886E22E3E4F000C25CA3 /* Build configuration list for PBXNativeTarget "JoelsTestUITests" */;
+			buildConfigurationList = E99B886E22E3E4F000C25CA3 /* Build configuration list for PBXNativeTarget "Side Menu PracticeUITests" */;
 			buildPhases = (
 				E99B885B22E3E4F000C25CA3 /* Sources */,
 				E99B885C22E3E4F000C25CA3 /* Frameworks */,
@@ -271,9 +271,9 @@
 			dependencies = (
 				E99B886122E3E4F000C25CA3 /* PBXTargetDependency */,
 			);
-			name = JoelsTestUITests;
+			name = "Side Menu PracticeUITests";
 			productName = JoelsTestUITests;
-			productReference = E99B885F22E3E4F000C25CA3 /* JoelsTestUITests.xctest */;
+			productReference = E99B885F22E3E4F000C25CA3 /* Side Menu PracticeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -299,7 +299,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E99B883B22E3E4EF00C25CA3 /* Build configuration list for PBXProject "JoelsTest" */;
+			buildConfigurationList = E99B883B22E3E4EF00C25CA3 /* Build configuration list for PBXProject "Side Menu Practice" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -316,9 +316,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E99B883F22E3E4EF00C25CA3 /* JoelsTest */,
-				E99B885322E3E4F000C25CA3 /* JoelsTestTests */,
-				E99B885E22E3E4F000C25CA3 /* JoelsTestUITests */,
+				E99B883F22E3E4EF00C25CA3 /* Side Menu Practice */,
+				E99B885322E3E4F000C25CA3 /* Side Menu PracticeTests */,
+				E99B885E22E3E4F000C25CA3 /* Side Menu PracticeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -394,12 +394,12 @@
 /* Begin PBXTargetDependency section */
 		E99B885622E3E4F000C25CA3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E99B883F22E3E4EF00C25CA3 /* JoelsTest */;
+			target = E99B883F22E3E4EF00C25CA3 /* Side Menu Practice */;
 			targetProxy = E99B885522E3E4F000C25CA3 /* PBXContainerItemProxy */;
 		};
 		E99B886122E3E4F000C25CA3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E99B883F22E3E4EF00C25CA3 /* JoelsTest */;
+			target = E99B883F22E3E4EF00C25CA3 /* Side Menu Practice */;
 			targetProxy = E99B886022E3E4F000C25CA3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -547,12 +547,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JoelsTest/Info.plist;
+				DEVELOPMENT_TEAM = 35MN533ZJW;
+				INFOPLIST_FILE = "Side Menu Practice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Joels.test.JoelsTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devsoft.sidemenu.practice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -564,12 +565,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = JoelsTest/Info.plist;
+				DEVELOPMENT_TEAM = 35MN533ZJW;
+				INFOPLIST_FILE = "Side Menu Practice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Joels.test.JoelsTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devsoft.sidemenu.practice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -592,7 +594,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JoelsTest.app/JoelsTest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Side Menu Practice.app/Side Menu Practice";
 			};
 			name = Debug;
 		};
@@ -612,7 +614,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JoelsTest.app/JoelsTest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Side Menu Practice.app/Side Menu Practice";
 			};
 			name = Release;
 		};
@@ -657,7 +659,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E99B883B22E3E4EF00C25CA3 /* Build configuration list for PBXProject "JoelsTest" */ = {
+		E99B883B22E3E4EF00C25CA3 /* Build configuration list for PBXProject "Side Menu Practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E99B886622E3E4F000C25CA3 /* Debug */,
@@ -666,7 +668,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E99B886822E3E4F000C25CA3 /* Build configuration list for PBXNativeTarget "JoelsTest" */ = {
+		E99B886822E3E4F000C25CA3 /* Build configuration list for PBXNativeTarget "Side Menu Practice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E99B886922E3E4F000C25CA3 /* Debug */,
@@ -675,7 +677,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E99B886B22E3E4F000C25CA3 /* Build configuration list for PBXNativeTarget "JoelsTestTests" */ = {
+		E99B886B22E3E4F000C25CA3 /* Build configuration list for PBXNativeTarget "Side Menu PracticeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E99B886C22E3E4F000C25CA3 /* Debug */,
@@ -684,7 +686,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E99B886E22E3E4F000C25CA3 /* Build configuration list for PBXNativeTarget "JoelsTestUITests" */ = {
+		E99B886E22E3E4F000C25CA3 /* Build configuration list for PBXNativeTarget "Side Menu PracticeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E99B886F22E3E4F000C25CA3 /* Debug */,
