@@ -21,16 +21,12 @@ enum ApiRoutes: URLRequestConvertible{
     switch self {
         case .getUser:
             return ""
-        default:
-            return ""
         }
     }
     
     private var method: HTTPMethod {
         switch self {
         case .getUser:
-            return .get
-        default:
             return .get
         }
     }
@@ -39,8 +35,6 @@ enum ApiRoutes: URLRequestConvertible{
         switch self{
             case .getUser:
                 return [:]
-            default:
-                return [:]
         }
     }
     
@@ -48,9 +42,8 @@ enum ApiRoutes: URLRequestConvertible{
         let url = try (baseRouteConstants.baseUrl.rawValue + endPoint).asURL()
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
-        request = try URLEncoding.methodDependent.encode(request,with: parameters)
+        request = try URLEncoding(arrayEncoding: .noBrackets).encode(request, with: parameters)
         return request
     }
-    
     
 }

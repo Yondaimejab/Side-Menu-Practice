@@ -7,49 +7,65 @@
 //
 
 import UIKit
+import Anchorage
 
 private let reusableIdentifier = "MenuItemCell"
 
 class MenuViewController: UIViewController {
     
-    var imageView = UIImageView(image: #imageLiteral(resourceName: "imagePlaceHolder"))
-    var tableView : UITableView!
+    var containerView = UIView()
+    var menuHeaderStackView = UIStackView()
+    var imageView = UIImageView(image: UIImage(systemName: "applelogo")!)
+    var nameLabel = UILabel()
+    var descriptionLabel = UILabel()
+    var tableView = UITableView()
     var delegate: HomeControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .gray
-        configureImageview()
-        configureTableView()
-        // Do any additional setup after loading the view.
         
+        configureUI()
+        buildUI()
+        displayDefaultUI()
     }
     
-    func configureTableView(){
-        tableView = UITableView()
+    func configureUI() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCellMenuItem.self, forCellReuseIdentifier: reusableIdentifier)
-        tableView.rowHeight = 70
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.separatorStyle = .none
-        
-        tableView.backgroundColor = .gray
-        self.view.addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            tableView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1),
-            tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-            tableView.topAnchor.constraint(equalTo: imageView.bottomAnchor	)
-            ])
+        menuHeaderStackView.spacing = 5
+        menuHeaderStackView.axis = .vertical
+        menuHeaderStackView.distribution = .fill
+        menuHeaderStackView.alignment = .center
+        nameLabel.font = .systemFont(ofSize: 14, weight: .bold)
+        nameLabel.text = "Apple.inc"
+        nameLabel.textColor = .black
+        descriptionLabel.text = "lorem ipsum dolor sit"
+        descriptionLabel.font = .systemFont(ofSize: 12, weight: .medium)
+        descriptionLabel.textColor = .gray
     }
     
-    func configureImageview() {
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(imageView)
-        NSLayoutConstraint.activate([imageView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor)
-            ,imageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            imageView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1),
-            imageView.heightAnchor.constraint(equalTo:self.view.heightAnchor, multiplier: 0.20)])
+    func buildUI() {
+        view.addSubview(containerView)
+        view.addSubview(tableView)
+        containerView.addSubview(menuHeaderStackView)
+        menuHeaderStackView.addArrangedSubview(imageView)
+        menuHeaderStackView.addArrangedSubview(nameLabel)
+        menuHeaderStackView.addArrangedSubview(descriptionLabel)
+    }
+    
+    func displayDefaultUI() {
+        containerView.horizontalAnchors == view.horizontalAnchors
+        containerView.topAnchor == view.topAnchor + DrawingConstants.spacing
+        containerView.heightAnchor == DrawingConstants.imageHeight + (DrawingConstants.labelHeight * 2)
+        menuHeaderStackView.edgeAnchors == containerView.edgeAnchors
+        tableView.widthAnchor == view.widthAnchor
+        tableView.bottomAnchor == view.bottomAnchor
+        tableView.topAnchor == menuHeaderStackView.bottomAnchor
+        imageView.heightAnchor == DrawingConstants.imageHeight
+        imageView.widthAnchor == DrawingConstants.imageHeight
     }
     
 
@@ -71,6 +87,15 @@ extension MenuViewController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let menuOption = MenuOptions(rawValue: indexPath.row)
         delegate?.handleMenuToggle(forMenuOption: menuOption)
+    }
+    
+}
+
+extension MenuViewController : UIScrollViewDelegate {
+    struct DrawingConstants {
+        static let labelHeight: CGFloat = 20.0
+        static let imageHeight: CGFloat = 45.0
+        static let spacing: CGFloat = 8.0
     }
     
 }

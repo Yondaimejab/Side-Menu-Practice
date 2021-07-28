@@ -50,19 +50,31 @@ class ViewController: UIViewController {
             view.insertSubview(menuController.view, at: 0)
             addChild(menuController)
             menuController.didMove(toParent: self)
-            print("is in")
         }
         
     }
     
     func animatePanel(ShouldExpand: Bool,menuOption: MenuOptions?){
         if ShouldExpand {
-            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut,
-                           animations:{
-                             self.centerController.view.frame.origin.x = self.centerController.view.frame.width - 80
+            UIView.animate(
+                withDuration: 0.5,
+                delay: 0,
+                usingSpringWithDamping: 0.8,
+                initialSpringVelocity: 0,
+                options: .curveEaseInOut,
+                animations: {
+                    self.centerController.view.frame.origin.x = self.centerController.view.frame.width - 80
             }, completion: nil)
-        }else{
-            UIView.animate(withDuration:0.5,delay: 0,usingSpringWithDamping: 0.7,initialSpringVelocity: 0,options: .curveEaseInOut,animations: {   self.centerController.view.frame.origin.x = 0 }){ (_) in
+        } else {
+            UIView.animate(
+                withDuration: 0.5,
+                delay: 0,
+                usingSpringWithDamping: 0.7,
+                initialSpringVelocity: 0,
+                options: .curveEaseInOut,
+                animations: {
+                    self.centerController.view.frame.origin.x = 0
+                }) { (_) in
                     guard let mOption = menuOption  else { return }
                     self.didSelectMenuOption(menuOption: mOption)
                 }
@@ -71,7 +83,15 @@ class ViewController: UIViewController {
     }
     
     func animateStatusbar(){
-        UIView.animate(withDuration:0.5,delay: 0,usingSpringWithDamping: 0.8,initialSpringVelocity: 0,options: .curveEaseInOut,animations: {   self.setNeedsStatusBarAppearanceUpdate() },completion: nil)
+        UIView.animate(
+            withDuration: 0.5,
+            delay: 0,
+            usingSpringWithDamping: 0.8,
+            initialSpringVelocity: 0,
+            options: .curveEaseInOut,
+            animations: { self.setNeedsStatusBarAppearanceUpdate() },
+            completion: nil
+        )
     }
     
     func didSelectMenuOption(menuOption: MenuOptions){
@@ -83,7 +103,11 @@ class ViewController: UIViewController {
             let controller = LegalInformationViewController()
             present(UINavigationController(rootViewController: controller),animated: true)
         default:
-            let alert = UIAlertController(title: "Seguro que quiere salir.", message: "Tenga un buen dia", preferredStyle: .actionSheet)
+            let alert = UIAlertController(
+                title: "Seguro que quiere salir.",
+                message: "Tenga un buen dia",
+                preferredStyle: .actionSheet
+            )
             let action = UIAlertAction(title: "yes", style: .default){ (_) in
                 exit(EXIT_SUCCESS)
             }
@@ -91,7 +115,6 @@ class ViewController: UIViewController {
             alert.addAction(action)
             alert.addAction(cancelAction)
             present(alert, animated:true)
-            print(menuOption.description)
         }
     }
 

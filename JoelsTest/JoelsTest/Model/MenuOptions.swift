@@ -17,22 +17,22 @@ enum MenuOptions : Int, CustomStringConvertible{
     var description: String {
         switch self {
         case .UseGuides:
-            return "Guia de uso."
+            return "Uso"
         case .legalInfo:
-            return "Informacion legal."
+            return "Informacion"
         default:
-            return "Cerrar session."
+            return "Salir"
         }
     }
     
     var image: UIImage {
         switch self {
         case .UseGuides:
-            return UIImage(#imageLiteral(resourceName: "question")) ?? UIImage()
+            return UIImage(systemName: "questionmark.circle")!.withTintColor(.black)
         case .legalInfo:
-            return UIImage(#imageLiteral(resourceName: "exclamation"))
+            return UIImage(systemName: "exclamationmark.circle")!.withTintColor(.black)
         default:
-            return UIImage(#imageLiteral(resourceName: "logout"))
+            return UIImage(systemName: "xmark.circle")!.withTintColor(.black)
         }
     }
     
